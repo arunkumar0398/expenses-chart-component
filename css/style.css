@@ -27,7 +27,7 @@ body {
 }
 
 .title-and-amount .title {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     color: hsl(27, 66%, 92%);
     font-weight: 400;
@@ -36,7 +36,7 @@ body {
 
 .title-and-amount .amount {
     margin-top: 8px;
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     color: hsl(27, 66%, 92%);
@@ -55,11 +55,11 @@ body {
     padding: 16px;
     border-radius: 14px;
     margin-top: 20px;
-    height: 450px;
+    height: 456px;
 }
 
 .chart-info .chart-title {
-    font-size: 24px;
+    font-size: 26px;
     color: hsl(25, 47%, 15%);
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
@@ -150,13 +150,13 @@ body {
   }
 
   .current--month .currentmonth--text {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'DM Sans', sans-serif;
     color: hsl(28, 10%, 53%);
     margin-bottom: 0;
   }
   .current--month .currentmonth--amount {
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'DM Sans', sans-serif;
     color: hsl(25, 47%, 15%);
     font-weight: 700;
@@ -168,7 +168,7 @@ body {
   }
 
   .previous--month .previousmonth--percentage {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     color:hsl(25, 47%, 15%);
@@ -176,7 +176,7 @@ body {
     margin-bottom: 0;
   }
   .previous--month .previousmonth--text {
-    font-size: 14px;
+    font-size: 18px;
     color: hsl(28, 10%, 53%);
     font-family: 'DM Sans', sans-serif;
     margin: 0;
@@ -186,6 +186,7 @@ body {
   @media only screen and (max-width: 480px) {
     .balance-header {
       width: 320px;
+      padding: 9px;
     }
 
     .background-style {
@@ -207,6 +208,38 @@ body {
 
     .chart-info {
       height: 408px;
+      padding: 11px;
     }
 
+    .expense-logo {
+      padding: 8px;
+    }
+
+    .title-and-amount .title {
+      font-size: 14px;
+    }
+
+    .title-and-amount .amount {
+      font-size: 22px;
+    }
+
+    .chart-info .chart-title {
+      font-size: 24px;
+    }
+
+    .current--month .currentmonth--text {
+      font-size: 14px;
+    }
+
+    .current--month .currentmonth--amount {
+      font-size: 28px;
+    }
+
+    .previous--month .previousmonth--percentage {
+      font-size: 0.9rem;
+    }
+
+    .previous--month .previousmonth--text {
+      font-size: 14px;
+    }
   }
