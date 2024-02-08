@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Expenses chart component</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; font-family: 'DM Sans', sans-serif; color: hsl(25, 47%, 15%); }
+    .attribution a { color: hsl(10, 79%, 65%); font-weight: 600; }
   </style>
 </head>
 <body>
 
-  My balance
-  $921.48
+  <div class="expense-chart">
+    <div class="balance-header">
+      <div class="title-and-amount">
+        <p class="title">My balance</p>
 
-  Spending - Last 7 days
+        <p class="amount">$921.48</p>
+      </div>
+      <div class="expense-logo">
+        <img src="./images/logo.svg" alt="expense logo">
+      </div>
+    </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <div class="chart-info">
+      <h1 class="chart-title">Spending - Last 7 days</h1>
 
-  Total this month
-  $478.33
+      <section class="chart-container">
+        <svg width="460" height="290" ></svg>
+      </section>
 
-  +2.4%
-  from last month
+      <div class="chart-breakline"></div>
+
+      <div class="month-balance">
+        <div class="current--month">
+          <p class="currentmonth--text">Total this month</p>
+          <p class="currentmonth--amount">$478.33</p>
+        </div>
+
+        <div class="previous--month">
+          <p class="previousmonth--percentage">+2.4%</p>
+          <p class="previousmonth--text">from last month</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/arunkumar0398" target="_blank">Arunkumar S</a>.
   </div>
+
+  <script src='https://d3js.org/d3.v4.min.js'></script>
+
+  <script src="./js/chart.js" async></script>
 </body>
 </html>
