@@ -118,4 +118,4 @@ let static_data = [
           barElements[6].style.fill = 'hsl(186, 34%, 60%)';
           break;
       } 
-    }, 10);
+    }, 90);
